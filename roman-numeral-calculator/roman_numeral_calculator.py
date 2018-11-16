@@ -83,13 +83,14 @@ def calculate(numerals):
  
  
 def main():
-    values = list(input('Enter the roman numerals you want to calculate.\nVald numerals are: M, C, D, L, X, V, I --> '))
+    msg = 'Enter the roman numerals you want to calculate.\n(Valid numerals are: M, C, D, L, X, V, I)\n: '
+    values = list(input(msg))
     for i in values:
         if i not in list(romans.keys()):
              print('Seems you entered an invalid roman number. Please try again...')
              exit()
              
-    numerals = ''.join(numerals)
+    numerals = ''.join(values)
     print(calculate(numerals))
 
 
