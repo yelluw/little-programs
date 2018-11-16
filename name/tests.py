@@ -1,6 +1,4 @@
-import sys
 import unittest
-from io import StringIO
 from unittest.mock import patch
 from name import (
     get_name,
